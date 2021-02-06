@@ -5,7 +5,7 @@ import './App.css';
 
 const Title = styled.h1`
 font-size: 4rem;
-font-family: 'Turret Road';
+font-family: 'Turret Road', cursive;
 color: Crimson;
 -webkit-text-stroke; 1px black;
 `;
