@@ -30,11 +30,19 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+// React JS is a library in which UI is created. It solves the problem of making applications change depending on the state of different components.
+
 1. Describe component state.
+
+// Component state is a characteristic in which parts of an application can change depending on code logic.
 
 1. Describe props.
 
+// Props are properties in which can be passed to various components in order to make applications dynamic.
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+// Side effects are logic built in to applications that are potentially changed when state is changed. They are synced by coding in logic to change depending on when other components // are updated.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
