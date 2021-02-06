@@ -10,13 +10,11 @@ color: Crimson;
 -webkit-text-stroke; 1px black;
 `;
 
-const App = () => {
+export default function App() {
   return (
-    <div className="App">
-      <Title className="Header">Star Wars Characters</Title>
+    <div className = 'App'>
+      <Title className = 'Header'>Star Wars Characters</Title>
       <CharacterCont />
     </div>
   );
 }
-
-export default App;

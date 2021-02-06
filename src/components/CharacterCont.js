@@ -12,25 +12,25 @@ const CardWrapper = styled.div`
     margin: 1%;
     `;
 
-export default function CharacterCont() {
-    const [state, setState] = useState([]);
-
-    useEffect(() => {
-        axios.get('https://swapi.dev/api/people/')
-        .then((res) => {
-            console.log('response: ', res.data.results);
-            setState(res.data.results);
-        })
-        .catch((error) => {
-            console.log('error: ', error);
-        });
-    }, []);
-
-    return (
-        <CardWrapper>
-            {state.map((character, id) => {
-                return <Character key = {id} character = {character} />
-            })}
-        </CardWrapper>
-    );
-}
+    export default function CharacterCont() {
+        const [state, setState] = useState([]);
+    
+        useEffect(() => {
+            axios.get('https://swapi.dev/api/people/')
+            .then((res) => {
+                console.log('response: ', res.data);
+                setState(res.data);
+            })
+            .catch((err) => {
+                console.log('error: ', err);
+            });
+        }, []);
+    
+        return (
+            <CardWrapper>
+                {state.map((character, id) => {
+                    return <Character key = {id} character = {character} />;
+                })}
+            </CardWrapper>
+        );
+    }
